@@ -4,8 +4,7 @@
   "description": "electron",
   "main": "main.js",
   "dependencies": {
-    "electron": "^3.0.10",
-    "electron-titlebar-windows": "^3.0.0"
+    "electron": "^3.0.10"
   },
   "devDependencies": {},
   "scripts": {
