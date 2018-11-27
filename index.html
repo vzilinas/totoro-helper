@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>helper-totoro</title>
+
+  <head>
+    <link rel="stylesheet" href="totoro.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+</head>
+
+<body>
+  <header id="titlebar">
+      <div id="drag-region">
+        <div id="title">
+            <span>Helper Totoro</span>
+          </div>
+        <div id="title-bar-buttons">
+          <span class='action-button' id="always-on-top-button"></span>
+          <span class='action-button' id="min-button"></span>
+          <span class='action-button' id="max-button"></span>
+          <span class='action-button' id="restore-button"></span>
+          <span class='action-button' id="close-button"></span>
+        </div>
+      </div>
+    </header>
+  <div id='mainBody'>
+    <div class="split left" id="main_accordion">
+    </div>
+    <div class="split right">
+      <div class="centered">
+        <div class="infoGuide">
+          <ul id="infoGuideList">
+          </ul>
+        </div>
+        <div class="bottom" id="buttonPlace" onclick="enableAutoCopy()">
+          <div class='wrap small' onclick="enableAutoCopy()">
+            <input type='checkbox' id="totoroMove">
+            <div class='totoro'>
+              <div class='ears'>
+                <div class='ear'></div>
+                <div class='ear'></div>
+              </div>
+              <div class='arm'></div>
+              <div class='arm'></div>
+              <div class='foot'></div>
+              <div class='foot two'></div>
+              <div class='body'>
+                <div class='spots'>
+                  <div class='spot'></div>
+                  <div class='spot'></div>
+                  <div class='spot'></div>
+                  <div class='spot'></div>
+                  <div class='spot'></div>
+                  <div class='spot'></div>
+                  <div class='spot'></div>
+                </div>
+                <div class='inner'>
+                  <div class='mouth'></div>
+                  <div class='eye'></div>
+                  <div class='eye'></div>
+                </div>
+              </div>
+            </div>
+            <div class="buttonCopy" onclick="enableAutoCopy()">Enable Auto Copy</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  require('./renderer.js');
+</script>
+<script type="text/javascript" src="data.js"></script>
+<script type="text/javascript" src="window.js"></script>
+</html>
